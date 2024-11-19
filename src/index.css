@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+.heroArea {
+  background: url("../src/assets/heroBannerMortgage.png");
+  background-size: cover;
+  background-position: center;
+}
+.heroAreaOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.radialColorText {
+  background: radial-gradient(circle, #ffd700 20%, #caaf68 60%, #8b5e2b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Make the text itself transparent so the background gradient shows */
+}
+
+.radialColor {
+  background: radial-gradient(circle, #ffd700 40%, #caaf68 60%, #8b5e2b 100%);
+}
