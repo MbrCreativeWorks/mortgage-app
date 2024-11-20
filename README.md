@@ -50,8 +50,12 @@ This will open the app in your default browser at `http://localhost:5173`.
 
 Here are some screenshots of the app:
 
-![App Screenshot 1](./src/assets/mortgageLogo.png)
-![App Screenshot 2](./src/assets/mortgageLogo.png)
+![App Screenshot 1](./src/assets/screen1.png)
+![App Screenshot 1](./src/assets/screen2.png)
+![App Screenshot 1](./src/assets/screen3.png)
+![App Screenshot 1](./src/assets/screen4.png)
+![App Screenshot 1](./src/assets/screen5.png)
+![App Screenshot 1](./src/assets/screen6.png)
 
 ## Video Demo
 
