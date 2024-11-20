@@ -55,12 +55,8 @@ Here are some screenshots of the app:
 
 ## Video Demo
 
-Watch a demo video explaining the features and usage of the Mortgage App:
-
-[Video Demo](https://your-video-url.com)
+Watch a demo video explaining the Development and usage of the Mortgage App: [Video Demo](https://your-video-url.com)
 
 ## Live URL
 
-Check out the live version of the app here:
-
-[Live Demo](https://your-live-url.com)
+Check out the live version of the app here: [Live Demo](https://your-live-url.com)
