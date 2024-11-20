@@ -1,14 +1,6 @@
 # Mortgage App
 
-A user-friendly mortgage application built with React, Tailwind CSS, Lucide icons, and React Slick carousel to provide a seamless and interactive experience. This app allows users to calculate mortgage rates, explore various loan options, and get insights into monthly payments.
-
-## Features
-
-- **Responsive Design:** The app is fully responsive, providing a smooth experience on both mobile and desktop devices.
-- **Mortgage Calculator:** Users can input loan amounts, interest rates, and term lengths to calculate their monthly payments.
-- **Loan Options:** Displays various loan options with visual sliders and easy-to-read summaries.
-- **Interactive Carousel:** A carousel component powered by React Slick to show multiple loan offers in a sleek and intuitive interface.
-- **Lucide Icons:** Uses Lucide for beautiful, scalable icons throughout the app.
+A user-friendly mortgage application built with React + Vite, Tailwind CSS, Lucide icons, and React Slick carousel to provide a seamless and interactive experience.  
 
 ## Technologies Used
 
@@ -30,7 +22,7 @@ Ensure you have `Node.js` and `npm` (or `yarn`) installed on your system.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/mortgage-app.git
+   git clone https://github.com/MbrCreativeWorks/mortgage-app.git
    ```
 
 2. Navigate into the project directory:
@@ -53,3 +45,22 @@ Ensure you have `Node.js` and `npm` (or `yarn`) installed on your system.
    ```
 
 This will open the app in your default browser at `http://localhost:5173`.
+
+## App Screenshots
+
+Here are some screenshots of the app:
+
+![App Screenshot 1](./src/assets/mortgageLogo.png)
+![App Screenshot 2](./src/assets/mortgageLogo.png)
+
+## Video Demo
+
+Watch a demo video explaining the features and usage of the Mortgage App:
+
+[Video Demo](https://your-video-url.com)
+
+## Live URL
+
+Check out the live version of the app here:
+
+[Live Demo](https://your-live-url.com)
