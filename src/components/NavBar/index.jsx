@@ -1,30 +1,26 @@
 import { useState } from "react";
 import mortgageLogo from "../../assets/mortgageLogo.png";
+import handleLinkClick from "../../utils/utils";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
-    { href: "#home", label: "Home" },
     { href: "#aboutUs", label: "About Us" },
     { href: "#services", label: "Services" },
-    { href: "#contact", label: "Contact" },
+    { href: "#team", label: "Our Team" },
+    { href: "#contact", label: "Contact Us" },
   ];
-
-  const handleLinkClick = (href) => {
-    const targetSection = document.querySelector(href);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-    setIsOpen(false);
-  };
 
   return (
     <nav className="sticky top-0 bg-black shadow-md z-50">
-      <div className="container mx-auto">
+      <div className="container px-4 md:px-8  mx-auto">
         <div className="flex items-center justify-between py-3">
-          <div className="w-32">
-            <img src={mortgageLogo} alt="Mortgage Logo" className="w-full" />
-          </div>
+          <a href="/">
+            <div className="w-32">
+              <img src={mortgageLogo} alt="Mortgage Logo" className="w-full" />
+            </div>
+          </a>
           {/* Links (hidden on mobile)   */}
           <div className="hidden md:flex space-x-6">
             {navLinks.map((link, index) => (
@@ -43,7 +39,13 @@ const Navbar = () => {
           </div>
           {/* CTA Button (hidden on mobile) */}
           <div className="hidden md:block">
-            <button className="radialColorBg text-black font-semibold px-4 py-2 rounded-lg transition">
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick("#contact");
+              }}
+              className="radialColorBg text-black font-semibold px-4 py-2 rounded-lg transition"
+            >
               Apply Now
             </button>
           </div>
@@ -51,38 +53,17 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-400 hover:text-primary focus:outline-none"
+              className="text-primary focus:outline-none"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                {isOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                )}
-              </svg>
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </div>
       {/* Mobile Menu Dropdown Links */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
-          <div className="px-4 py-2 space-y-2">
+        <div className="md:hidden bg-black shadow-md">
+          <div className="p-4 space-y-4">
             {navLinks.map((link, index) => (
               <a
                 key={index}
@@ -96,7 +77,13 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <button className="w-full radialColorBg text-black font-semibold px-4 py-2 rounded-lg transition">
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick("#contact");
+              }}
+              className="w-full radialColorBg text-black font-semibold px-4 py-2 rounded-lg transition"
+            >
               Apply Now
             </button>
           </div>

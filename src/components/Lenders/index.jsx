@@ -51,7 +51,7 @@ const Lenders = () => {
     };
 
     return (
-        <section className="bg-gray-100 pt-20 pb-12">
+        <section className="bg-gray-100 pt-10 md:pt-20 pb-12" id="lenders">
             <div className="mx-auto">
                 <h2 className="text-center text-xl lg:text-3xl font-bold text-gray-900 mb-10">
                     Our Trusted Lenders

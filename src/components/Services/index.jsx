@@ -1,4 +1,5 @@
 import React from "react";
+import { Check } from "lucide-react";
 
 const services = [
   {
@@ -49,12 +50,12 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-gray-100 py-20">
-      <div className="container mx-auto">
+    <section className="bg-gray-100 py-10" id="services">
+      <div className="container px-4 md:px-8  mx-auto">
         <h2 className="text-center text-2xl lg:text-5xl font-bold text-gray-800 mb-10">
           Our Services
         </h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-4  md:gap-8 md:grid-cols-2 lg:grid-cols-2">
           {services.map((service, index) => (
             <div
               key={index}
@@ -63,9 +64,12 @@ const Services = () => {
               <h3 className="text-xl font-semibold text-primary mb-4">
                 {service.title}
               </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-600">
-                {service.details.map((detail, idx) => (
-                  <li key={idx}>{detail}</li>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+              {service.details.map((detail, idx) => (
+                  <li key={idx} className="flex items-center">
+                    <Check className="w-5 h-5 text-primary mr-2" />
+                    {detail}
+                  </li>
                 ))}
               </ul>
             </div>

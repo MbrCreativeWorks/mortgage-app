@@ -5,7 +5,7 @@ import VideoPopup from "../VideoPopup";
 const AboutUs = () => {
   return (
     <div className="bg-white" id="aboutUs">
-      <div className="container mx-auto py-20 flex flex-col lg:flex-row items-center">
+      <div className="container px-4 md:px-8  mx-auto py-10 pt-20 flex flex-col lg:flex-row items-center">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-2xl lg:text-5xl font-bold text-gray-900">
             About Us

@@ -21,8 +21,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-20">
-      <div className="container mx-auto px-4">
+    <section className="bg-gray-100 py-10" id="contact">
+      <div className="container px-4 md:px-8  mx-auto">
         <h2 className="text-2xl lg:text-5xl font-bold text-gray-900 text-center mb-10">
           Apply Now for Mortgage Inquiry
         </h2>
@@ -31,12 +31,14 @@ const Contact = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 w-full md:w-1/3">
             <h3 className="text-lg font-semibold text-gray-900">Contact Us</h3>
             <p className="mt-2 text-gray-700">Daniel Char</p>
-            <p className="text-gray-700">Phone: 647.748.9010</p>
             <p className="text-gray-700">
-              Email:
+              <strong>Phone: </strong> 647.748.9010
+            </p>
+            <p className="text-gray-700">
+              <strong>Email: </strong>
               <a
                 href="mailto:daniel@metalmortgage.ca"
-                className="text-blue-600 hover:underline"
+                className="text-gray-700 hover:text-primary hover:underline"
               >
                 daniel@metalmortgage.ca
               </a>
@@ -66,7 +68,7 @@ const Contact = () => {
                 <h3 className="text-center text-xl font-semibold text-green-600">
                   Success! Your inquiry has been submitted.
                 </h3>
-                <p className="text-center mt-4 text-gray-700">
+                <p className="text-center mt-2 text-gray-700">
                   Thank you for reaching out. We will get back to you shortly!
                 </p>
               </div>
@@ -86,7 +88,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full p-3 border border-gray-300 rounded-lg"
+                    className="w-full p-3 border border-gray-300 rounded-lg outline-none"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -105,7 +107,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full p-3 border border-gray-300 rounded-lg"
+                    className="w-full p-3 border border-gray-300 rounded-lg outline-none"
                     placeholder="Enter your email address"
                   />
                 </div>
@@ -124,7 +126,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full p-3 border border-gray-300 rounded-lg"
+                    className="w-full p-3 border border-gray-300 rounded-lg outline-none"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -141,16 +143,15 @@ const Contact = () => {
                     name="inquiry"
                     value={formData.inquiry}
                     onChange={handleInputChange}
-                    required
                     rows="4"
-                    className="w-full p-3 border border-gray-300 rounded-lg"
+                    className="w-full p-3 border border-gray-300 rounded-lg outline-none"
                     placeholder="Describe your mortgage inquiry"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+                  className="w-full bg-primary-light text-black font-semibold py-3 rounded-lg transition"
                 >
                   Submit Inquiry
                 </button>

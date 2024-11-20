@@ -13,19 +13,19 @@ const teamMembers = [
     name: "John Doe",
     title: "Loan Officer",
     phone: "123.456.7890",
-    email: "john.doe@metalmortgage.ca",
+    email: "john.d@metalmortgage.ca",
     image: "https://pittakis.com/wp-content/uploads/2016/10/team-1-2.jpg", // Replace with actual image URL
   },
 ];
 
 const Team = () => {
   return (
-    <section className="bg-white py-20">
-      <div className="container mx-auto">
+    <section className="bg-white py-10 pt-10 md:pt-20" id="team">
+      <div className="container px-4 md:px-8  mx-auto">
         <h2 className="text-center text-2xl lg:text-5xl font-bold text-gray-800 mb-10">
           Meet Our Team
         </h2>
-        <div className="flex justify-center gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg p-6 max-w-xs">
               <div className="flex justify-center mb-4">
@@ -40,15 +40,15 @@ const Team = () => {
                 <h3 className="text-xl font-semibold text-primary mb-2">
                   {member.name}
                 </h3>
-                <p className="text-gray-600 mb-4">{member.title}</p>
-                <p className="text-gray-600 mb-2">
+                <p className="text-gray-700 mb-2">{member.title}</p>
+                <p className="text-gray-700 mb-1">
                   <strong>Phone: </strong> {member.phone}
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-700">
                   <strong>Email: </strong>
                   <a
                     href={`mailto:${member.email}`}
-                    className="text-gray-600 hover:text-primary hover:underline"
+                    className="text-gray-700 hover:text-primary hover:underline"
                   >
                     {member.email}
                   </a>
