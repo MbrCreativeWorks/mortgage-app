@@ -9,7 +9,7 @@ export default {
       colors: {
         primary: {
           DEFAULT: '#caaf68', // Primary color 
-          light: '#e0c88b',  // Light variant
+          light: '#ffd47d',  // Light variant
           dark: '#a68c50',   // Dark variant
         },
         secondary: {

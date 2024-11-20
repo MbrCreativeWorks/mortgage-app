@@ -25,20 +25,20 @@ const Footer = () => {
       items: [
         { label: "Email", value: "daniel@metalmortgage.ca" },
         { label: "Phone", value: "647.748.9010" },
-        { label: "Address", value: "38 Iannuzzi Street, Toronto, Ontario" },
+        { label: "Address", value: "38 Iannuzzi Street, Toronto, Ontario." },
       ],
     },
   ];
 
   return (
     <footer className="bg-black text-gray-400 py-20">
-      <div className="container mx-auto flex justify-between px-4">
+      <div className="container mx-auto flex justify-between">
         <div className="flex flex-col space-y-1">
           <div className="w-44 mb-4">
             <img src={mortgageLogo} alt="Mortgage Logo" className="w-full" />
           </div>
           <p className="text-base text-gray-400">Building Your Future with Rock-Solid Solutions.</p>
-          <p className="text-base text-gray-400">2024 MetalMortgage. All Rights Reserved.</p>
+          <p className="text-base text-gray-400">2024 Metal Mortgage. All Rights Reserved.</p>
          
         </div>
 

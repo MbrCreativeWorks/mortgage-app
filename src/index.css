@@ -16,12 +16,12 @@ body {
 }
 
 .radialColorText {
-  background: radial-gradient(circle, #ffd700 20%, #caaf68 60%, #8b5e2b 100%);
+  background: radial-gradient(circle, #caaf68 20%, #926228 60%, #8b5e2b 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; /* Make the text itself transparent so the background gradient shows */
 }
 
-.radialColor {
-  background: radial-gradient(circle, #ffd700 40%, #caaf68 60%, #8b5e2b 100%);
+.radialColorBg {
+  background: radial-gradient(circle, #caaf68 20%, #926228 60%, #8b5e2b 100%);
 }
