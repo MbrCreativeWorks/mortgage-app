@@ -2,8 +2,7 @@
 
 A user-friendly mortgage application built with React + Vite, Tailwind CSS, Lucide icons, and React Slick carousel to provide a seamless and interactive experience.  
 
-### Link to the Landing Page: 
-[Live Demo](https://mortgage-app-seven.vercel.app)
+### Link to the Landing Page: [Live Demo](https://mortgage-app-seven.vercel.app)
 
 ### Time Spent: 
 I have spent 6 hours on this task. Where i spent 2 hours on gathering the design ideas from given website and online references( color palettes, images, logos etc.. ). And i have spent 4 hours on the development of this webpage.
