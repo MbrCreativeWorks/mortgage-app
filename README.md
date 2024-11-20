@@ -63,4 +63,4 @@ Here are some screenshots of the app:
 
 ## Live URL
 
-[Live Demo](https://mortgage-nsquyppei-mbrcreativeworks-projects.vercel.app) : Check out the live version of the app here
+[Live Demo](https://mortgage-app-seven.vercel.app) : Check out the live version of the app here
