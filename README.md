@@ -59,8 +59,8 @@ Here are some screenshots of the app:
 
 ## Video Demo
 
-[Video Demo](https://your-video-url.com) : Watch a demo video explaining the Development and usage of the Mortgage App 
+[Video Demo](https://drive.google.com/file/d/17UvHvTr7SL_vDQH-hfv2L0RyxP9ZsldQ) : Watch a demo video explaining the Development and usage of the Mortgage App 
 
 ## Live URL
 
-[Live Demo](https://your-live-url.com) : Check out the live version of the app here
+[Live Demo](https://mortgage-nsquyppei-mbrcreativeworks-projects.vercel.app) : Check out the live version of the app here
