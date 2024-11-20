@@ -8,6 +8,11 @@ body {
 
 .heroArea {
   background: url("../src/assets/heroBannerMortgage.png");
+  /* background: linear-gradient(
+      rgba(0, 0, 0, 0.5),  
+      #ffd47d
+    ),
+    url("../src/assets/heroBannerMortgage.png"); */
   background-size: cover;
   background-position: center;
 }
@@ -16,12 +21,29 @@ body {
 }
 
 .radialColorText {
-  background: radial-gradient(circle, #ffd700 20%, #caaf68 60%, #8b5e2b 100%);
+  background: radial-gradient(circle, #caaf68 20%, #926228 60%, #8b5e2b 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; /* Make the text itself transparent so the background gradient shows */
 }
 
-.radialColor {
-  background: radial-gradient(circle, #ffd700 40%, #caaf68 60%, #8b5e2b 100%);
+.radialColorBg {
+  background: radial-gradient(circle, #caaf68 20%, #926228 60%, #8b5e2b 100%);
+}
+
+#aboutUs {
+  background: linear-gradient(to bottom, #ffd47d, #f3f4f6);
+}
+
+#team{
+  background: linear-gradient(to bottom, #f3f4f6, #ffd47d);
+}
+
+#lenders
+{
+  background: linear-gradient(to bottom, #ffd47d, #f3f4f6);
+}
+
+#contact {
+  background: linear-gradient(to bottom, #f3f4f6, #000000);
 }
