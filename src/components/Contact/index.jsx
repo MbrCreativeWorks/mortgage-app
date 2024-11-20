@@ -16,9 +16,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can handle form submission, e.g., send data to the server
-    setIsSubmitted(true); // Set success message after submission
-    setFormData({ name: "", email: "", phone: "", inquiry: "" }); // Clear form
+    setIsSubmitted(true);
+    setFormData({ name: "", email: "", phone: "", inquiry: "" });
   };
 
   return (
@@ -29,13 +28,12 @@ const Contact = () => {
         </h2>
 
         <div className="flex flex-col md:flex-row gap-8">
-             {/* Contact Information */}
           <div className="bg-white rounded-lg shadow-lg p-8 w-full md:w-1/3">
             <h3 className="text-lg font-semibold text-gray-900">Contact Us</h3>
             <p className="mt-2 text-gray-700">Daniel Char</p>
             <p className="text-gray-700">Phone: 647.748.9010</p>
             <p className="text-gray-700">
-              Email:{" "}
+              Email:
               <a
                 href="mailto:daniel@metalmortgage.ca"
                 className="text-blue-600 hover:underline"
@@ -46,20 +44,34 @@ const Contact = () => {
             <p className="text-gray-700">
               38 Iannuzzi Street, Toronto, Ontario M5V0S2
             </p>
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                Our Location
+              </h4>
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBJbasjMigDKckKDJ_bvO82jvW4QyJmd6s&q=38+Iannuzzi+Street,+Toronto,+Ontario+M5V0S2"
+                width="100%"
+                height="320"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                aria-hidden="false"
+                tabIndex="0"
+                title="Map Location"
+              ></iframe>
+            </div>
           </div>
-          {/* Form */}
-          <div className="bg-white rounded-lg shadow-lg p-8 w-full md:w-2/3">
+          <div className="bg-white rounded-lg shadow-lg p-8 w-full md:w-2/3 flex items-center justify-center">
             {isSubmitted ? (
-              <div className="text-center">
-                <h3 className="text-xl font-semibold text-green-600">
+              <div>
+                <h3 className="text-center text-xl font-semibold text-green-600">
                   Success! Your inquiry has been submitted.
                 </h3>
-                <p className="mt-4 text-gray-700">
+                <p className="text-center mt-4 text-gray-700">
                   Thank you for reaching out. We will get back to you shortly!
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} className="w-full">
                 <div className="mb-4">
                   <label
                     htmlFor="name"
@@ -145,19 +157,7 @@ const Contact = () => {
               </form>
             )}
           </div>
-
-         
         </div>
-
-        {/* Success Message at the Bottom */}
-        {isSubmitted && (
-          <div className="mt-6 text-center">
-            <p className="text-green-600 text-lg font-semibold">
-              Your inquiry has been successfully submitted! We will get back to
-              you soon.
-            </p>
-          </div>
-        )}
       </div>
     </section>
   );
