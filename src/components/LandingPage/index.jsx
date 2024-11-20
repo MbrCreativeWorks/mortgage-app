@@ -10,7 +10,7 @@ import Contact from "../Contact";
 const LandingPage = () => {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <HeroArea />
       <AboutUs />
       <Services />
